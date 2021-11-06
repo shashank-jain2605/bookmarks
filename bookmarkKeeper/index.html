@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a5f6c737ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bookmark-keeper</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- open modal -->
+    <h1 id="show-modal">Add Bookmark</h1>
+    <!-- bookmarks -->
+    <div class="container" id="bookmarks-container">
+      <!-- <div class="item">
+        <div class="close">
+          <i
+            class="far fa-times-circle"
+            id="delete-bookmark"
+            title="delete bookmark"
+          ></i>
+        </div>
+        <div class="name">
+          <img
+            src="https://s2.googleusercontent.com/s2/favicons?domain=http://google.com"
+            alt="fav-icon"
+          />
+          <a href="https://www.google.com/" target="_blank">Google</a>
+        </div>
+      </div> -->
+    </div>
+    <!-- modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>Add Bookmark</h3>
+          <i
+            class="far fa-times-circle"
+            id="close-modal"
+            title="delete bookmark"
+          ></i>
+        </div>
+        <div class="modal-content">
+          <form action="" id="bookmark-form">
+            <!-- website  name -->
+            <div class="form-group">
+              <label for="website-name" class="form-label">Website Name</label>
+              <input type="text" class="form-input" id="website-name" />
+            </div>
+            <!-- website  link -->
+            <div class="form-group">
+              <label for="website-url" class="form-label">Website url</label>
+              <input type="text" class="form-input" id="website-url" />
+            </div>
+            <div class="form-button">
+              <button class="submit-modal">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
